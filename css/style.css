@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1519px;
+}
+.header-top{
+   padding: 30px 5%;
+   background-color: #0070A0;
+   color: white;
+   font-size: 14px;
+   text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.nav-info{
+    display: flex;
+    align-items: center;
+    gap:50px
+}
+.nav-brand{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.nav-brand span{
+    font-size: 28px;
+    font-weight: 700;
+    color: black;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.nav-menu a{
+    color: black;
+    font-size: 14px;   
+}
+.nav-tools{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-tools__left{
+    color: #0070A0;
+}
+.nav-tools__right{
+    padding: 10px 35px;
+    background-color: #0070A0;
+    color: white;
+}
