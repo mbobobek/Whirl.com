@@ -4,67 +4,160 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whirl.com</title>
-    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
-    <!-- fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="./images/Logo.svg">
 </head>
 <body class="font-sans">
 
     <!-- Header -->
     <header>
+        <!-- Top Header -->
         <div class="py-4 px-6 bg-[#0070A0] text-white text-center text-sm">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
         </div>
-        <div class="container mx-auto w-[90%] max-w-[1519px]">
-            <!-- Navbar -->
+        <!-- Navbar -->
+        <div class="container mx-auto w-[90%] max-w-[1440px]">
             <nav class="flex items-center justify-between py-4">
+                <!-- Logo -->
                 <div class="flex items-center gap-12">
                     <a href="./index.html" class="flex items-center gap-3">
                         <img src="./images/Logo.svg" alt="Logo">
-                        <span class="text-2xl font-bold text-black">Whirl</span>
+                        <span class="text-3xl font-bold text-black">Whirl</span>
                     </a>
-                    <ul class="flex items-center gap-6">
-                        <li><a href="/" class="text-black text-sm">Features</a></li>
-                        <li><a href="/" class="text-black text-sm">Pricing</a></li>
-                        <li><a href="/" class="text-black text-sm">Integrations</a></li>
-                        <li><a href="/" class="text-black text-sm">Learn</a></li>
+                    <!-- Nav Menu -->
+                    <ul id="nav-menu" class="hidden md:flex gap-10">
+                        <li><a href="/" class="block text-xl transition-all duration-300 ease-in-out  hover:text-[#0070A0] hover:text-2xl">Features</a></li>
+                        <li><a href="/" class="block text-xl transition-all duration-300 ease-in-out  hover:text-[#0070A0] hover:text-2xl">Pricing</a></li>
+                        <li><a href="/" class="block text-xl transition-all duration-300 ease-in-out  hover:text-[#0070A0] hover:text-2xl">Integrations</a></li>
+                        <li><a href="/" class="block text-xl transition-all duration-300 ease-in-out  hover:text-[#0070A0] hover:text-2xl">Learn</a></li>
                     </ul>
                 </div>
+                <!-- Buttons -->
                 <div class="flex items-center gap-5">
-                    <a href="/" class="text-[#0070A0]">Sign In</a>
-                    <a href="/" class="py-2 px-6 bg-[#0070A0] text-white rounded-md">Book a demo</a>
-                    <button class="text-2xl">
+                    <a href="/" class="btn-primary hidden md:block">Sign In</a>
+                    <a href="/" class="btn-secondary hidden md:block">Book a demo</a>
+                    <button id="menu-toggle" class="text-2xl md:hidden">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
             </nav>
-            <!-- hero -->
-            <div class="flex items-start ">
-                <div class="">
-                    <h1 class="text-6xl max-w-lg font-[Fraunces] leading-tight font-bold  ">Your everyday tasks, automated.</h1>
-                    <p class="text-lg max-w-sm mt-1">Whirl lets you design and streamline your everyday tasks and workflows in just a few clicks.</p>
-                    <div class="hero-info__item">
-
+            
+            <!-- Hero Section -->
+            <div class="flex flex-col md:flex-row items-center mt-8 justify-between">
+                <!-- Hero Info -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl max-w-lg font-[Fraunces] leading-tight">Your everyday tasks, automated.</h1>
+                    <p class="text-lg max-w-xs mt-4 leading-tight">Whirl lets you design and streamline your everyday tasks and workflows in just a few clicks.</p>
+                    <div class="flex flex-col md:flex-row items-center gap-5 mt-5 justify-center md:justify-start">
+                        <a href="/" class="btn-secondary w-full md:w-auto">Book a demo</a>
+                        <a href="/" class="btn-primary w-full md:w-auto">
+                            Learn More
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
                     </div>
+                </div>
+                <!-- Hero Image -->
+                <div class="mt-8 md:mt-0">
+                    <img class="w-full max-w-[500px]" src="./images/hero-image.png" alt="hero-image">
+                </div>
+            </div>
+            <!-- Hero-stats -->
+            <div class="mt-20">
+                <p class="text-center text-2xl text-gray-700 font-normal">Trusted by 50,000+ companies</p>
+                <div class="flex flex-wrap gap-5 items-center justify-center mt-10">
+                    <img src="./images/focusfox.svg" alt="focusfox">
+                    <img src="./images/Nowintech.svg" alt="Nowintech">
+                    <img src="./images/optimer.svg" alt="optimer">
+                    <img src="./images/carded.svg" alt="carded">
                 </div>
             </div>
         </div>
     </header>
 
     <!-- Main -->
-    <main></main>
+    <main>
+        <div class="container mx-auto w-[90%] max-w-[1440px]">
+            <!-- Cards Section -->
+            <section class="mt-20 mb-20 flex flex-wrap justify-between gap-5">
+                <div class="w-full md:w-[calc(100%/3-15px)] bg-[#FAEA73] flex flex-col gap-5 p-5">
+                    <img width="55px" src="./images/flash.svg" alt="flash">
+                    <h2 class="text-2xl text-[#1F1F1F]">Fast. Really fast.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="w-full md:w-[calc(100%/3-15px)] bg-[#CCEFF6] flex flex-col gap-5 p-5">
+                    <img width="55px" src="./images/dollar.svg" alt="flash">
+                    <h2 class="text-2xl text-[#1F1F1F]">More bang for buck.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="w-full md:w-[calc(100%/3-15px)] bg-[#F7CEDC] flex flex-col gap-5 p-5">
+                    <img width="55px" src="./images/welldone.svg" alt="flash">
+                    <h2 class="text-2xl text-[#1F1F1F]">Safe and secure.</h2>
+                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </section>
+            <!-- Section 2 -->
+            <section class="hidden sm:block">
+                <h2 class="text-3xl md:text-[39px] font-[Fraunces] max-w-[630px] font-normal text-center md:text-left">
+                    <span class="text-4xl md:text-[42px] font-normal">We will take care of everything,</span> so you can get back to relaxing.
+                </h2>
+                <div class="flex flex-col md:flex-row justify-between items-center gap-10 mt-10">
+                    <div class="w-full md:w-auto">
+                        <ul>
+                            <li class="list-style">
+                                <div>
+                                    <span>
+                                        <img src="./images/pin.svg" alt="pin">
+                                    </span>
+                                    <p class="custom-text">Anti-loss technology</p>
+                                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </li>
+                            <li class="list-style">
+                                <div>
+                                    <span>
+                                        <img src="./images/smile.svg" alt="smile">
+                                    </span>
+                                    <p class="custom-text">Exchange easily</p>
+                                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </li>
+                            <li class="list-style">
+                                <div>
+                                    <span>
+                                        <img src="./images/convert.svg" alt="convert">
+                                    </span>
+                                    <p class="custom-text">Anti-loss technology</p>
+                                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </li>
+                            <li class="list-style">
+                                <div>
+                                    <span>
+                                        <img src="./images/flash-blue.svg" alt="flash">
+                                    </span>
+                                    <p class="custom-text">Anti-loss technology</p>
+                                    <i class="fa-solid fa-chevron-down text-gray-400"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="w-full md:w-auto">
+                        <img class="w-full max-w-[600px]" src="./images/section-2-image.png" alt="section-2-image">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
 
     <!-- Footer -->
     <footer></footer>
-
 </body>
 </html>
